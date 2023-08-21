@@ -11,3 +11,11 @@
 
 # class 3
 1. audio, video, a, hr, br, ul, li, ol, strong, b, i, mark,del, sup, sub,table, tr,td,th,thead,tbody,tfoot
+
+# class 4
+table, forms
+
+# class 5
+1. css add methods (inline, in document, external)
+2. width, height
+3. scales px, rem, em,%,vw,vh,inches
