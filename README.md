@@ -19,3 +19,11 @@ table, forms
 1. css add methods (inline, in document, external)
 2. width, height
 3. scales px, rem, em,%,vw,vh,inches
+
+# class 6
+1. background color, color
+2. font-family
+font-size
+font-weight
+line-height
+word-spacing

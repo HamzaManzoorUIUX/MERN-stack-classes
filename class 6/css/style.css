@@ -1,0 +1,21 @@
+.red{
+    /* width: max-content; */
+    /* height: 2rem; */
+    background-color: red;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 5;
+    word-spacing: 2px;
+}
+.blue{
+    width: 2rem;
+    height: 2rem;
+    background-color: blue;
+}
+.green{
+    width: 2rem;
+    height: 2rem;
+    background-color: #00ff0040;
+}
