@@ -27,3 +27,9 @@ font-size
 font-weight
 line-height
 word-spacing
+
+
+# class 8
+1. margin, padding shorthand
+2. display block, inline, inline block
+3. css selectors

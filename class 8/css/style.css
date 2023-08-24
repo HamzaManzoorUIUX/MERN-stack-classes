@@ -1,24 +1,48 @@
-div {
-    background-color: blue;
-}
-
 .spanClass {
     background-color: rebeccapurple;
 }
 
 .classDiv {
     border: 20px solid black;
-    
+
 }
-.classDiv>span.spanClass{
+
+.classDiv>span.spanClass {
     background-color: white;
 }
-.classDiv>div.spanClass>.spanClass{
+
+.classDiv>div.spanClass>.spanClass {
     background-color: rgb(22, 187, 85);
 }
-.classDiv+div{
+
+.classDiv+div {
     background-color: rgb(196, 39, 39);
 }
-#idDiv{
+
+#idDiv {
     background-color: chartreuse;
+}
+.blockDisplay{
+    padding: 1rem;
+}
+.blockDisplay div {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 1rem;
+}
+.blockInline div{
+    display: inline;
+    padding: 20px;
+    background-color: rebeccapurple;
+    margin: 1rem;
+    width: 300px;
+}
+.blockInlineBlock div{
+    display: inline-block;
+    padding: 20px;
+    background-color: rgb(26, 204, 50);
+    margin: 2rem 5rem;
+    width: 50px;
 }
