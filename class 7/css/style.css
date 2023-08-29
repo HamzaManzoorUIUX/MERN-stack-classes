@@ -1,0 +1,20 @@
+body,html{
+    padding: 0px;
+    margin: 0px;
+}
+.ahmad{
+    /* background-color: #ff0000; */
+    /* padding: 1rem; */
+}
+.hamza{
+    background-color: blue;
+    margin: 2rem;
+    padding: 1rem;
+    /* color: white; */
+    border: 1rem solid rgb(0, 0, 0);
+    outline: 1rem solid rgb(84, 82, 82);
+    box-sizing: border-box;
+}
+.bg-white{
+    background-color: white;
+}
