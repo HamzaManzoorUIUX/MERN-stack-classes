@@ -33,3 +33,14 @@ word-spacing
 1. margin, padding shorthand
 2. display block, inline, inline block
 3. css selectors
+
+
+# class 9
+1. flex,justify-content,align-items,flex-direction
+2. list-style-stype, list default margin-padding
+3. a tag styling, text-decoration, max- and min width,height
+
+# class 10
+1. inline-flex,
+2. calc()
+3. layout
