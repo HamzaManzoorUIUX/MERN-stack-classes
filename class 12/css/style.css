@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+}
+.section{
+    background-color: red;
+    height: 100vh;
+}
+.section#sectionOne{
+    background-color: green;
+}
+.section#sectionTwo{
+    background-color: gray;
+    position: relative;
+}
+.section#sectionThree{
+    background-color: blueviolet;
+}
+#sectionFour{
+    background-color: turquoise;
+}
+nav{
+   height: 100px;
+   background-color: black;
+   color: white;
+   position: sticky;
+   top: 100px; 
+   width: 100%;
+}

@@ -47,3 +47,7 @@ word-spacing
 
 # class 11
 1. border-radius, border,overflow, visiability, opacity
+
+# class 12
+1. position, fixed, absolute, relative, sticky,static
+2. z-index
