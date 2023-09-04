@@ -44,3 +44,6 @@ word-spacing
 1. inline-flex,
 2. calc()
 3. layout
+
+# class 11
+1. border-radius, border,overflow, visiability, opacity
