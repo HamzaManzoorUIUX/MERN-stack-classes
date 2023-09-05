@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'manrope';
+    src: url('../fonts/Manrope/Manrope-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: 'manrope', Helvetica, sans-serif;
+}
+
+.main-device-nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-device-nav .brand-logo {
+    display: block;
+}
+
+.main-device-nav .brand-logo img {
+    width: 100px;
+}
+
+.main-device-nav .device-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.more-menu li {
+    margin: auto 1rem;
+}
+
+.more-menu {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.more-menu button {
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+}
