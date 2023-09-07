@@ -1,0 +1,84 @@
+body {
+    margin: 0px;
+}
+
+.box {
+    display: block;
+    width: 200px;
+    height: 200px;
+
+}
+
+.box:hover {
+    /* animation: move 2s linear 0s infinite forwards; */
+    /* background-color: black; */
+    /* width: 100%; */
+    /* transition: all 2s ease-in; */
+}
+
+.box1 {
+    animation: rotate 2s linear 0s infinite forwards;
+    background-color: blue;
+}
+
+.box2 {
+    background-color: rgb(37, 216, 75);
+    animation: move 2s linear 0s infinite forwards;
+
+}
+
+.box3 {
+    background-color: rgb(204, 16, 173);
+}
+
+.box4 {
+    background-color: rgb(236, 58, 27);
+}
+
+.box5 {
+    background-color: rgb(17, 148, 204);
+}
+
+@keyframes colorChanger {
+    /* 0% {
+        background-color: blue;
+    } */
+
+    20% {
+        background-color: rgb(37, 216, 75);
+    }
+
+    40% {
+        background-color: rgb(204, 16, 173);
+    }
+
+    60% {
+        background-color: rgb(236, 58, 27);
+
+    }
+
+    80% {
+        background-color: rgb(17, 148, 204);
+    }
+
+    100% {
+        background-color: rgb(180, 191, 57);
+
+    }
+}
+@keyframes move {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(1000px);
+    }
+}
+@keyframes rotate {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}

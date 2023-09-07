@@ -51,3 +51,8 @@ word-spacing
 # class 12
 1. position, fixed, absolute, relative, sticky,static
 2. z-index
+
+# class 13 practice
+
+# class 14
+1. animations, transitions, hover
