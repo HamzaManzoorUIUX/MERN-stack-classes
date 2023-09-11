@@ -56,3 +56,9 @@ word-spacing
 
 # class 14
 1. animations, transitions, hover
+
+# class 15
+1. pseudo classes 
+
+# class 16
+1. pseudo elements
