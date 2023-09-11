@@ -7,6 +7,7 @@ h1 {
     background-color: rgb(28, 215, 28);
     height: 20px;
     width: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 18% 100%, 0 86%);
 }
 
 .hamza {
