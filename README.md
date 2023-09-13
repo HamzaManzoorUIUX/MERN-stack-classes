@@ -7,7 +7,8 @@
 
 # class 2
 1. block lavel and inline element
-2. div,span,header,footer,section,nav,aside,img
+2. block lavel elements:div,header,footer,section,nav,aside,body, main,br,hr,p,h1-h6,pre
+3. inline element: span,img,input,label,b,strong,sup,sub,i,em,audio,video
 
 # class 3
 1. audio, video, a, hr, br, ul, li, ol, strong, b, i, mark,del, sup, sub,table, tr,td,th,thead,tbody,tfoot
