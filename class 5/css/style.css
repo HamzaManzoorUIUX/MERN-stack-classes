@@ -2,7 +2,9 @@
     background-color: palegoldenrod;
     color: white;
 }
+#wasi900{
 
+}
 h1 {
     background-color: rgb(28, 215, 28);
     height: 20px;
@@ -15,17 +17,19 @@ h1 {
     width: 100%;
     height: 100vh;
     background-color: red;
+    color: white;
 }
 html{
     font-size: 10px;
 }
 .usama {
-    width: 190vw;
+    width: 10rem;
     height: 5rem;
     background-color: blue;
 }
 .abc{
     font-size: 50px;
+    display: flex;
 }
 .wasi {
     max-width: 900px;

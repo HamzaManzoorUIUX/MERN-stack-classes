@@ -63,3 +63,12 @@ word-spacing
 
 # class 16
 1. pseudo elements
+
+# class 17 
+1. tailwind css
+
+# class 18
+1. console=>log, warn, error
+2. var, let, const
+3. datatypes=> number, string, bool, array or object
+4. typeof
