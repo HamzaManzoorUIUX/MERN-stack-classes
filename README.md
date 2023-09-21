@@ -72,3 +72,15 @@ word-spacing
 2. var, let, const
 3. datatypes=> number, string, bool, array or object
 4. typeof
+
+# class 19
+1. javascript connection and intro
+
+# class 20
+1. typescript into and configration
+
+# class 21
+1. arithmatic operaters
+2. assignment operater
+3. logical operater
+4. undefined, null, "", false, 0
