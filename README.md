@@ -84,3 +84,21 @@ word-spacing
 2. assignment operater
 3. logical operater
 4. undefined, null, "", false, 0
+
+# class 22
+String length
+String slice()
+String substring()
+String replace()
+String replaceAll()
+String toUpperCase()
+String toLowerCase()
+String concat()
+String trim()
+String trimStart()
+String trimEnd()
+String padStart()
+String padEnd()
+String charAt()
+String charCodeAt()
+String split()
