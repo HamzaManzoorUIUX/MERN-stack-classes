@@ -102,3 +102,10 @@ String padEnd()
 String charAt()
 String charCodeAt()
 String split()
+
+# class 23
+1. push(), pop()
+2. shift(),unshift()
+3. length, splice, slice
+4. find, filter
+5. basic of functions
