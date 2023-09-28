@@ -109,3 +109,7 @@ String split()
 3. length, splice, slice
 4. find, filter
 5. basic of functions
+
+# class 24
+1. if, else, else if
+2. string litral
