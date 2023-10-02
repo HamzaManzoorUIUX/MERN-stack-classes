@@ -113,3 +113,5 @@ String split()
 # class 24
 1. if, else, else if
 2. string litral
+
+# class 25
