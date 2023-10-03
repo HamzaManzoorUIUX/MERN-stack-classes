@@ -115,3 +115,4 @@ String split()
 2. string litral
 
 # class 25
+1. while loop
