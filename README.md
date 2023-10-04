@@ -116,3 +116,9 @@ String split()
 
 # class 25
 1. while loop
+
+# class 26
+1. do while loop
+
+# class 27
+1. for loop
