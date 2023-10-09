@@ -122,3 +122,12 @@ String split()
 
 # class 27
 1. for loop
+2. trenery operater
+
+# class 28
+1. print this pattern
+*
+**
+***
+****
+*****
