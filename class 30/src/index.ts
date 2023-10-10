@@ -53,3 +53,12 @@ function diamondGen(diamond:number) {
 }
 diamondGen(11)
 diamondGen(21)
+let i=95
+console.log('i',i);
+console.log('i++',i--); //i=i+1
+console.log('++i',++i); //i=i+1
+
+let a=--i
+let b=i++
+console.log('b',b);
+console.log('a',a);
