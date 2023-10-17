@@ -131,3 +131,10 @@ String split()
 ***
 ****
 *****
+
+# class 33
+1. objects , why use object
+2. class
+3. create object
+4. interface
+5. inheritance
