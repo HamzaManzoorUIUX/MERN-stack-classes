@@ -137,4 +137,7 @@ String split()
 2. class
 3. create object
 4. interface
-5. inheritance
+5. 
+
+# class 36
+1. enum, types, Set
