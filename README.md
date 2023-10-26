@@ -175,3 +175,11 @@ String split()
 # class 38
 
 1. polymorphism, try,catch,finally,async, await,setTimeout,setInterval,clearTimeout, clearInterval
+
+
+# class 39
+1. DOM 
+2. onclick
+3. nav bar make responsive
+4. getElementbyId, getElementbyClassName,querySelector
+5. scope of variable, self call function
