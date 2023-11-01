@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+  .main-nav{
+    // height: 48px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .brand-logo{
+        color: white;
+        text-decoration: none;
+        font-size: 3rem;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+  }  
+}
+*{
+    box-sizing: border-box;
+}
