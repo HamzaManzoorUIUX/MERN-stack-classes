@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 370">
+    <style>
+          #clipPath rect{
+      width: 100%;
+  }
+  .LogoClip{
+      transform: translate(50px, 50px);
+  animation: RotateAnimi 1s linear 0s infinite forwards;
+  transform-origin: 185px 185px;
+  
+  }
+  
+  @keyframes RotateAnimi {
+      0%{
+          transform: rotateZ(0deg) translate(50px, 50px);
+      }
+      100%{
+          transform: rotateZ(360deg) translate(50px, 50px);
+      }
+  }
+          </style>
+    <g id="Group_2" data-name="Group 2" transform="translate(-0.001 -0.001)">
+      <g id="Group_1" data-name="Group 1" class="LogoClip">
+        <path id="Path_1" data-name="Path 1" d="M7.78,406.26A7.78,7.78,0,0,1,2.28,393l123.2-123.2a7.779,7.779,0,1,1,11,11L13.28,404a7.76,7.76,0,0,1-5.5,2.26Z" transform="translate(0 -144.3)" fill="#29abe2"/>
+        <path id="Path_2" data-name="Path 2" d="M154.1,259.94a7.78,7.78,0,0,1-5.5-13.28L248.68,146.58a7.779,7.779,0,1,1,11,11L159.6,257.66a7.76,7.76,0,0,1-5.5,2.28Z" transform="translate(0 -144.3)" fill="#d4145a"/>
+        <path id="Path_3" data-name="Path 3" d="M254.18,406.26a7.76,7.76,0,0,1-5.5-2.28L2.28,157.58a7.779,7.779,0,1,1,11-11L259.68,393a7.78,7.78,0,0,1-5.5,13.28Z" transform="translate(0 -144.3)" fill="#29abe2"/>
+      </g>
+    </g>
+  </svg>

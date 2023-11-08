@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    .main-nav {
+        display: flex;
+        // height: 100px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        z-index: 2;
+        padding: 1.25rem .5rem;
+
+        &.scrolled-nav {
+            background-color: red;
+        }
+
+        &>a {
+            background-color: white;
+            color: red;
+        }
+
+        .nav-bar-menu {
+            padding: 0px;
+            margin: 0px;
+            padding-right: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+
+            li {
+                a {
+                    color: white;
+                    font-size: 1.25rem;
+                    text-decoration: none;
+                    padding: 1rem 1.25rem;
+
+                    &:hover {
+                        // background-color: red;
+                        color: red;
+                    }
+
+                    &::after {}
+                }
+            }
+        }
+
+        .brand-logo {
+            color: white;
+            font-size: 60px;
+            text-decoration: none;
+
+            &.text-logo {
+                background-color: aqua;
+            }
+        }
+    }
+}
+.h-100vh{
+    height: 100vh;
+    position: relative;
+    background-color: black;
+}
