@@ -8,25 +8,28 @@ const UsersDetails = () => {
         skip:number
         total:number
     }|undefined>()
-useEffect(()=>{
-    axios.get('https://dummyjson.com/products').then(res=>{
-    if(res.status===200)    
-    {
-        setData(res.data);
-        
+    const getProductsData=async()=>{
+        try {
+            const response=await axios.get('https://dummyjson.com/products')
+            setData(response.data);
+            
+        } catch (error) {
+            console.log('error',error);
+            
+        }
+        finally{
+            console.log("Hamza");
+        }
     }
-    }).catch(err=>{
-        console.log('err',err );
-    })
+useEffect(()=>{
+    getProductsData()
 },[])
-    console.log('data',data);
+    console.log('data',data?.products);
     
     return (
         <div className='products-list'>
             {
                 data?.products?.map(obj=>{
-                    console.log('obj',obj);
-                    
                     return <div className='products-list-item'>
                         <div className="media">
                         <img src={obj.thumbnail} alt={obj.title} />
