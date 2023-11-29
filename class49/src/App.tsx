@@ -1,38 +1,42 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 
 const App = () => {
- const data=[
-  {
-    name:"hamza",
-    id:"sampleCard1",
-    img:"./logo192.png",
-    details:"Hamza is a teacher"
-  },
-  {
-    name:"hamza",
-    id:"sampleCard2",
-    img:"./logo192.png",
-    details:"Hamza is a student"
-  },
-  {
-    name:"Tahir",
-    id:"sampleCard3",
-    img:"./logo512.png",
-    details:"Tahir is a unknown person"
-  },
- ]
-  return (
-    <div className='border-right-container'>
-    {
-      (data.map((obj)=><div key={obj.id} className='border-right-container-item'>
-      <div>
-      <img src={obj.img} alt="" />
-      <p>
-      {obj.details}
-      </p>
-      </div>
-      </div>))
+  const [userCoordiates,setUserCoordiates]=useState<GeolocationPosition>()
+  const [weatherData,setWeatherData]=useState()
+  const getUserLocation=()=>{
+    navigator.geolocation.getCurrentPosition((position)=>setUserCoordiates(position))
+  }
+  const getWeatherInfo=async()=>{
+    try {
+            const config={
+              headers: { 
+                'X-RapidAPI-Key': 'a98d18f47cmsh8e66bad19e6d36dp1475e2jsn01419853b085', 
+                'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
+              }
+              }
+      const respose=await axios.get(`https://weatherapi-com.p.rapidapi.com/current.json?q=${userCoordiates?.coords.latitude},${userCoordiates?.coords.longitude}`,config)
+      setWeatherData(respose.data);
+      
+      
+    } catch (error) {
+      console.log('error',error);
+      
     }
+  }
+  useEffect(()=>{
+    getUserLocation()
+  },[])
+  useEffect(()=>{
+if(userCoordiates){
+  getWeatherInfo()
+}
+  },[userCoordiates])
+  console.log('weatherData',weatherData);
+  
+  return (
+    <div>
+      Get location
     </div>
   );
 };
