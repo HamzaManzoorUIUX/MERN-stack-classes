@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+}
+.border-right-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    .border-right-container-item{
+        max-width: 250px;
+        width: 100%;
+        min-width: 200px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        &::after{
+            content: "";
+            width: 0px;
+            height: 48px;
+            border-right: 1px solid black;
+            display: block;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
