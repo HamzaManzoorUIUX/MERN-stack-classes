@@ -1,0 +1,16 @@
+$primary: #1a67cb;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.main-nav-bar {
+    background-color: $primary;
+    padding: 1rem;
+}
