@@ -7,9 +7,14 @@ const Home = () => {
         <div>
       <NavBar title={"Home"}/>
           Home
-          <Link to="/aboutus">
+          <Link to="/ctf">
 <button>
-about us
+CTF
+</button>
+            </Link>  
+          <Link to="/ftc">
+<button>
+FTC
 </button>
             </Link>  
         </div>
