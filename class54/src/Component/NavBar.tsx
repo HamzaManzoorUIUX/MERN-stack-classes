@@ -4,11 +4,9 @@ import { FaPhone } from "react-icons/fa";
 import { NavBarType, activeType } from '../types/main';
 const NavBar:FC<NavBarType> = ({active,onChangeActive}) => {
     const menuItem=["about","skill","portfolio",'education']
-    console.log('active',);
-    
     return (
         <nav>
-            <Container newClasses={"flex justify-between items-center"}>
+            <Container className={"flex justify-between items-center"}>
                 <a href="/" className='text-primary text-[24px] font-semibold'>
                     Hamza Manzoor
                 </a>
@@ -17,12 +15,12 @@ const NavBar:FC<NavBarType> = ({active,onChangeActive}) => {
                         menuItem.map(obj=><li><button onClick={()=>onChangeActive(obj as activeType)} className={`p-6 block text-primary capitalize ${active===obj?"border border-primary bg-[#0C8CE91A] border-t-0":""}`}>{obj}</button></li>)
                     }
                 </ul>
-                <div>
-                    <button className='' type='button'>
-<FaPhone/>
+                <div className='flex gap-[24px]'>
+                    <button className='py-7 px-2 block text-primary border border-primary border-t-0' type='button'>
+                        <FaPhone/>
                     </button>
-                    <button type='button'>
-Contact Me
+                    <button type='button' className='py-6 px-4 block bg-primary text-[18px] text-white font-medium'>
+                        Contact Me
                     </button>
                 </div>
             </Container>
