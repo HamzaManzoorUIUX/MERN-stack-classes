@@ -6,6 +6,7 @@ const App = () => {
   const [state1,setState1]=useState(1)
   console.log("App.tsx");
   console.log('state',state);
+  console.log('state1',state1);
   
   return (
     <div>
