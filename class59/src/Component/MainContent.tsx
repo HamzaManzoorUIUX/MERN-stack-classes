@@ -2,17 +2,17 @@ import React, { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalContext';
 
 const MainContent = () => {
-    const {state}=useContext(GlobalContext)
-    console.log('apiData',state);
+    const {state,changeCounter}=useContext(GlobalContext)
     
     return (
         <div>
-            <table>
+            <table className='w-full'>
                 <thead>
                     <tr>
                         <th>#</th>
                         <th>title</th>
                         <th>image</th>
+                        <th>actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,11 +29,11 @@ const MainContent = () => {
                             </td>
                             <td>
                                 <div className='flex'>
-                                <button type='button' className='bg-primary px-3'>
+                                <button type='button' className='bg-primary px-3' onClick={()=>changeCounter(obj.id,"-")}>
                                 -
                                 </button>
-                                <input type="text" value={1} className='border border-2 text-center' />
-                                <button type='button' className='bg-primary px-3'>
+                                <input type="text" value={obj.counter} className='border border-2 text-center' />
+                                <button type='button' className='bg-primary px-3' onClick={()=>changeCounter(obj.id,"+")}>
                                 +
                                 </button>
                                 </div>

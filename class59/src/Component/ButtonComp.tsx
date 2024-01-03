@@ -5,10 +5,7 @@ const ButtonComp = () => {
     const {abcAPiCaller}=useContext(GlobalContext)
     return (
         <div>
-            <button type='button' >
-                Click me
-            </button>
-            <button type='button' onClick={abcAPiCaller}>
+            <button type='button' className='bg-primary px-3 py-2 rounded text-white' onClick={abcAPiCaller}>
                 call api
             </button>
         </div>

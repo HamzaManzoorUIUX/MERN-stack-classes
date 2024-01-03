@@ -1,5 +1,6 @@
 import axios from "axios";
-import { Dispatch, FC, ReactElement, SetStateAction, createContext, useState } from "react";
+import {  FC, ReactElement,  createContext, useReducer } from "react";
+import reducer from "./GlobalReducer";
 export interface productsProps{
 id:number,
 title:string,
@@ -12,6 +13,7 @@ price:number
 rating:number
 stock:number
 thumbnail:string
+counter:number
 }
 export interface productsPagginationProps{
     products:productsProps[]
@@ -21,14 +23,8 @@ export interface productsPagginationProps{
 }
 export interface initialStateProps{
     state:productsPagginationProps,
-    apiData:string[]
-    setState:Dispatch<SetStateAction<{
-        products: never[];
-        limit: number;
-        skip: number;
-        total: number;
-    }>>
     abcAPiCaller:()=>void
+    changeCounter:(id:number,indication:string)=>void
 }
 const initailState:initialStateProps={
     state:{
@@ -37,25 +33,28 @@ const initailState:initialStateProps={
         skip:0,
         total:0
     },
-    apiData:[],
-    setState:()=>{},
-    abcAPiCaller:()=>{}
+    abcAPiCaller:()=>{},
+    changeCounter:(id,indication)=>{}
 }
 const GlobalContext=createContext(initailState)
 
 const ContextProvider:FC<{children:ReactElement|ReactElement[]}>=({children})=>{
-    const [state,setState]=useState({
-        products:[],
-        limit:0,
-        skip:0,
-        total:0
-    })
-    const [apiData,setApiData]=useState([])
+    const [state,dispatch]=useReducer(reducer,{
+        products: [],
+        limit: 0,
+        skip: 0,
+        total: 0
+    });
+    const changeCounter=(id:number,indication:string)=>{
+        dispatch({type:indication,data:id})
+
+    }
     const abcAPiCaller=async()=>{
         const response=await axios.get('https://dummyjson.com/products')
-        setState(response.data)
+        dispatch({type:"store",data:response.data})
     }
-    return <GlobalContext.Provider value={{state,apiData,setState,abcAPiCaller}}>
+
+    return <GlobalContext.Provider value={{state,changeCounter,abcAPiCaller}}>
         <div>
         {children}
             <nav>
