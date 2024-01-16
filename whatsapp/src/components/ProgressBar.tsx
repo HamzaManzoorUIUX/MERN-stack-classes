@@ -9,6 +9,7 @@ const ProgressBar:FC<{progress:number}> = ({progress}) => {
     margin-top:2rem;
     margin-bottom:2rem;
     position: relative;
+    oveflow:hidden;
     span{
         position: absolute;
         top:0;
