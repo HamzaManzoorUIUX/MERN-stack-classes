@@ -77,4 +77,45 @@ img{
 }
 
 `
-export { MainChatWrapper, PreloaderWrapper, NavBarWrapper, AvatarWrapper }
+
+const UserWrapper = styled.div`
+margin: 20px;
+display: flex;
+// width: 320px;
+padding: .5rem;
+background-color: #131c21;
+color: white;
+border: 0.1px solid #919191;
+gap: 0.5rem;
+p{
+    margin: 0;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.name_time{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.content .message_time{
+    font-Size: 12px;
+    color: #919191;
+}
+.count{
+    border-radius: 50%;
+    color: black;
+    background-color: lightgreen;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+`
+
+
+export { MainChatWrapper, PreloaderWrapper, NavBarWrapper, AvatarWrapper, UserWrapper }
