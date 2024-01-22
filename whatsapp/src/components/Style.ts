@@ -40,7 +40,6 @@ a{
 `
 const LogoWrapper = styled.section`
   background-color: #262d31;
-  width: 70%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -121,7 +120,7 @@ margin: 20px;
 display: flex;
 // width: 320px;
 padding: .5rem;
-background-color: #131c21;
+background-color: #262d31;
 color: white;
 border: 0.1px solid #919191;
 gap: 0.5rem;
@@ -157,7 +156,6 @@ p{
 const WifiOptionWrapper = styled.main`
  background-color:#085373;
  height:100px;
- width:30%;
  line-height:6px;
  .upp{
   position:relative;
@@ -215,7 +213,6 @@ const InputSearchWrapper = styled.main`
 margin-top:10px;
 div{
  position:relative;
- width:30%;
  display: flex;
 justify-content:center;
 align-items:center;
