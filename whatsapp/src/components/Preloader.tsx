@@ -1,9 +1,8 @@
 import React, { FC, useEffect, useRef, useState } from 'react';
-import styled from "styled-components";
 import { FaWhatsapp } from "react-icons/fa6";
 import ProgressBar from './ProgressBar';
 import { FaLock } from "react-icons/fa";
-import { PreloaderWrapper } from './style';
+import { PreloaderWrapper } from './Style';
 const Preloader:FC<{speedToHide:number}> = ({speedToHide}) => {
     const [preloaderVal,setPreloaderValue]=useState(0)
     const ref=useRef<any>()

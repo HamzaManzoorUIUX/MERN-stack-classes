@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavBarWrapper } from './style';
+import { NavBarWrapper } from './Style';
 import Avatar from './Avatar';
 import { IoMdMoon } from "react-icons/io";
 import { HiStatusOnline } from "react-icons/hi";

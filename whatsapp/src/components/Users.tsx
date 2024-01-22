@@ -1,5 +1,5 @@
 import Avatar from "./Avatar";
-import { UserWrapper } from "./style";
+import { UserWrapper } from "./Style";
 
 interface UserTypes {
   name?: string;

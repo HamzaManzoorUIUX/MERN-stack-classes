@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainChatWrapper } from './style';
+import { MainChatWrapper } from './Style';
 import NabvBar from './NabvBar';
 import ConnectionBar from './ConnectionBar';
 

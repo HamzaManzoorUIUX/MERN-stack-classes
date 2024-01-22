@@ -5,13 +5,13 @@ import MainChat from "./components/MainChat";
 
 
 const App = () => {
-  // const [loading,setLoading]=useState(true)
-  // const speedToHide=2
-  // useEffect(()=>{
-  //   setTimeout(()=>{
-  //     setLoading(false)
-  //   },speedToHide*1000)
-  // },[])
+  const [loading,setLoading]=useState(true)
+  const speedToHide=2
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoading(false)
+    },speedToHide*1000)
+  },[])
   return (
     <div>
       {/* <Users /> */}
@@ -19,7 +19,7 @@ const App = () => {
 
         loading?
         <Preloader speedToHide={speedToHide}/>:<MainChat/>
-      } */}
+      }
     </div>
   );
 };

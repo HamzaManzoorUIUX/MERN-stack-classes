@@ -2,7 +2,7 @@ import React from "react";
 // import "../assets/scss/index.scss";
 import Logo from "../assets/svg/Logo.png";
 // import styled, { createGlobalStyle } from "styled-components";
-import { GlobalStyles, LogoWrapper } from "./style";
+import { GlobalStyles, LogoWrapper } from "./Style";
 
 // const GlobalStyles = createGlobalStyle`
 //   * {

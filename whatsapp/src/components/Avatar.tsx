@@ -1,5 +1,5 @@
 import React,{FC} from 'react';
-import { AvatarWrapper } from './style';
+import { AvatarWrapper } from './Style';
 
 
 
