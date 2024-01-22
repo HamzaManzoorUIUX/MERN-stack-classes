@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 const MainChatWrapper = styled.main`
   display: flex;
   .left-side-section{
@@ -119,3 +121,4 @@ p{
 
 
 export { MainChatWrapper, PreloaderWrapper, NavBarWrapper, AvatarWrapper, UserWrapper }
+
