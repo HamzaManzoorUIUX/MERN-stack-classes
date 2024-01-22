@@ -3,6 +3,7 @@ import { MainChatWrapper } from './Style';
 import NabvBar from './NabvBar';
 import ConnectionBar from './ConnectionBar';
 import User from './Users';
+import Section from './Section';
 
 const MainChat = () => {
     return (
@@ -15,7 +16,7 @@ const MainChat = () => {
                 </div>
             </div>
             <div className='right-side-section'>
-                right
+                <Section/>
             </div>
         </MainChatWrapper>
     );

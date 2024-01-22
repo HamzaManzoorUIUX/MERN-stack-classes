@@ -40,7 +40,6 @@ a{
 `
 const LogoWrapper = styled.section`
   background-color: #262d31;
-  width: 70%;
   height: 100vh;
   display: flex;
   flex-direction: column;
