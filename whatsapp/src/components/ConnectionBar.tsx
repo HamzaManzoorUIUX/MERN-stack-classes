@@ -1,9 +1,12 @@
 import React from 'react';
+import WifiOption from './WifiOption';
+import InputSearch from './InputSearch';
 
 const ConnectionBar = () => {
     return (
         <div>
-            connection bar
+            <WifiOption />
+            <InputSearch />
         </div>
     );
 };

@@ -157,7 +157,6 @@ p{
 const WifiOptionWrapper = styled.main`
  background-color:#085373;
  height:100px;
- width:30%;
  line-height:6px;
  .upp{
   position:relative;
@@ -215,7 +214,6 @@ const InputSearchWrapper = styled.main`
 margin-top:10px;
 div{
  position:relative;
- width:30%;
  display: flex;
 justify-content:center;
 align-items:center;

@@ -4,15 +4,15 @@ import NabvBar from './NabvBar';
 import ConnectionBar from './ConnectionBar';
 
 const MainChat = () => {
-    
+
     return (
         <MainChatWrapper>
             <div className='left-side-section'>
-<NabvBar/>
-<ConnectionBar/>
+                <NabvBar />
+                <ConnectionBar />
             </div>
             <div className='right-side-section'>
-right
+                right
             </div>
         </MainChatWrapper>
     );
