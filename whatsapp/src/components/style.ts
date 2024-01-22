@@ -121,7 +121,7 @@ margin: 20px;
 display: flex;
 // width: 320px;
 padding: .5rem;
-background-color: #131c21;
+background-color: #262d31;
 color: white;
 border: 0.1px solid #919191;
 gap: 0.5rem;

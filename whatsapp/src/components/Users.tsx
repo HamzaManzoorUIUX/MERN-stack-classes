@@ -21,7 +21,7 @@ const User = ({
 }: UserTypes) => {
   return (
     <UserWrapper>
-      <Avatar width="60px"/>
+      <Avatar width="60px" />
       <div className="content">
         <div className="name_time">
           <p>{name}</p>
@@ -32,11 +32,6 @@ const User = ({
           <p className="count">{count}</p>
         </div>
       </div>
-      {/* <p>{name}</p>
-      <p>{time}</p>
-
-      <p>{message}</p>
-      <span>{count}</span> */}
     </UserWrapper>
   );
 };
