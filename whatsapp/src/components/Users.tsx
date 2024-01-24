@@ -21,7 +21,11 @@ const User = ({
 }: UserTypes) => {
   return (
     <UserWrapper>
+<<<<<<< Updated upstream
       <Avatar width="60px"/>
+=======
+      <Avatar width="60px" imgSrc={img}/>
+>>>>>>> Stashed changes
       <div className="content">
         <div className="name_time">
           <p>{name}</p>
