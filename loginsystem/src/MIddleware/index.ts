@@ -13,9 +13,7 @@ export const signupValidation = [
     check("password", "Please Provide a valid email and password")
         .not()
         .isEmpty(),
-    check("userName", "Please Provide a valid email and password")
-        .not()
-        .isEmpty(),
+    
 ];
 export const isAvailableFields = (req: Request, res: Response, next: NextFunction) => {
     const errors = validationResult(req);

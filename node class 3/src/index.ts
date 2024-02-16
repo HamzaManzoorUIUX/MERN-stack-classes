@@ -17,6 +17,11 @@ server.get('/', abc, (req, res) => {
     BlogPostModel.create(data).then((res) => console.log(res)).catch((err) => console.log(err))
 })
 
+server.get('/', abc, (req, res) => {
+    const data = req.body
+    BlogPostModel.create(data).then((res) => console.log(res)).catch((err) => console.log(err))
+})
+
 server.listen(PORT, () => {
     console.log('working on port: ' + PORT);
 })
