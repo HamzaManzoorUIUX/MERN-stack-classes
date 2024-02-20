@@ -1,19 +1,37 @@
 import { Request, Response, Router } from 'express';
-import { signupValidation, isAvailableFields, SimpleValidation } from '../MIddleware';
+import { signupValidation, isAvailableFields, SimpleValidation, authCheckMiddleware } from '../MIddleware';
 import User from './AuthModal';
 import bcrypt from "bcryptjs"
-import { body } from 'express-validator';
+import jwt from 'jsonwebtoken'
+const secret = process.env.secret || ""
 const router = Router();
 
-router.get('/', (req, res) => {
-    res.send('Hello World authenticated');
+
+
+router.get('/', authCheckMiddleware, (req: any, res) => {
+    try {
+        res.json(req.userInfo)
+    } catch (error) {
+        res.send("There is an error")
+    }
+
 });
 router.post('/', SimpleValidation, isAvailableFields, async (req: Request, res: Response) => {
     const response = await User.findOne({ where: { email: req.body.email } })
     if (response) {
         const compare = await bcrypt.compareSync(req.body.password, response.dataValues.password)
         if (compare) {
-            res.send('Hello World you login to system successful');
+            const userData = response.dataValues
+            delete userData.password
+            const token = await jwt.sign({
+                exp: Math.floor(Date.now() / 1000) + (60 * 60),
+                data: userData,
+            }, secret);
+
+            res.json({
+                token,
+                ...userData
+            });
         }
         else {
             res.statusCode = 401;
